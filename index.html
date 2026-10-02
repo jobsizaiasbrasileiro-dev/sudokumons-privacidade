@@ -35,7 +35,7 @@
             font-size: 14px;
             margin-top: 6px;
         }
-        .badge-offline {
+        .badge-privacy {
             display: inline-block;
             background: #E8F5E9;
             color: #2E7D32;
@@ -52,7 +52,6 @@
             margin-top: 26px;
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
             gap: 8px;
         }
         p { margin-bottom: 12px; font-size: 15px; color: #4E342E; }
@@ -65,6 +64,13 @@
             margin: 18px 0;
             border: 1.5px solid #EFEBE4;
             box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .ads-box {
+            background: #FFF8E1;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            border: 1.5px solid #FFE082;
         }
         .contact {
             margin-top: 36px;
@@ -82,44 +88,57 @@
 <body>
     <div class="header">
         <div class="logo-title">🐾 Sudokumons ✨</div>
-        <p class="meta">Política de Privacidade • Atualizada em 29 de setembro de 2026</p>
-        <span class="badge-offline">🛡️ Aplicativo 100% Offline • Sem Rastreamento de Dados</span>
+        <p class="meta">Política de Privacidade • Atualizada em 02 de outubro de 2026</p>
+        <span class="badge-privacy">🛡️ Progresso 100% local • Anúncios com consentimento</span>
     </div>
 
     <p>Esta Política de Privacidade aplica-se ao jogo para dispositivos móveis <b>Sudokumons</b> (identificador de pacote: <code>com.jobsizaiasbrasileiro.sudokumons</code>), desenvolvido com foco absoluto em privacidade, segurança infantil e entretenimento educativo.</p>
 
     <div class="highlight-box">
-        <b>Compromisso Fundamental:</b> O Sudokumons NÃO coleta, NÃO armazena remotamente, NÃO transmite e NÃO compartilha nenhuma informação pessoal, identificador de dispositivo, dados de localização ou qualquer dado do usuário com terceiros.
+        <b>Compromisso Fundamental:</b> O Sudokumons NÃO coleta dados pessoais, NÃO armazena nada em servidores próprios e NÃO compartilha informações de identificação pessoal (nome, e-mail, localização, contatos) com terceiros. A única coleta que existe no app é a dos anúncios, descrita na seção 3.
     </div>
 
     <h2>1. Coleta de Informações</h2>
-    <p>O aplicativo opera de maneira completamente autônoma e <b>offline</b>:</p>
+    <p>O aplicativo opera de maneira autônoma, com progresso local:</p>
     <ul>
         <li><b>Sem Coleta de Dados Pessoais:</b> Não solicitamos nome, e-mail, telefone, lista de contatos ou contas de redes sociais.</li>
         <li><b>Sem Acesso a Recursos Sensíveis:</b> O jogo não acessa câmera, microfone, GPS/localização nem arquivos externos do dispositivo.</li>
-        <li><b>Sem Anúncios:</b> Não utilizamos nenhum SDK de publicidade (como Google AdMob, Unity Ads, etc.). Não há coleta de identificadores de publicidade (AAID).</li>
-        <li><b>Sem Ferramentas de Analytics:</b> Não integramos ferramentas de telemetria ou rastreamento de comportamento (como Firebase Analytics ou AppsFlyer).</li>
+        <li><b>Publicidade (Google AdMob):</b> O app exibe anúncios banner do Google AdMob — os dados tratados pela Google para isso estão detalhados na seção 3.</li>
+        <li><b>Sem Ferramentas de Analytics Próprias:</b> Não integramos Firebase Analytics, AppsFlyer ou qualquer telemetria de comportamento nossa.</li>
     </ul>
 
     <h2>2. Armazenamento Local de Progresso</h2>
-    <p>Todo o progresso das fases, estrelas conquistadas, recordes de tempo e conquistas desbloqueadas são gravados <b>estritamente na memória interna e privada do seu próprio aparelho</b>, utilizando banco de dados SQLite local protegido pela sandbox do Android.</p>
+    <p>Todo o progresso das fases, estrelas conquistadas, recordes de tempo e conquistas desbloqueadas são gravados <b>estritamente na memória interna e privada do seu próprio aparelho</b>, utilizando banco de dados SQLite local protegido pela sandbox do Android. Esses dados nunca são transmitidos.</p>
 
-    <h2>3. Permissões Utilizadas</h2>
+    <div class="ads-box">
+        <h2>3. Publicidade (Google AdMob)</h2>
+        <p>Para manter o jogo gratuito, o Sudokumons exibe <b>anúncios em formato banner</b> operados pelo <b>Google AdMob</b>:</p>
+        <ul>
+            <li><b>Dados tratados pela Google:</b> Google Advertising ID (quando disponível e consentido), endereço IP e eventos de exibição/clique do anúncio — conforme a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
+            <li><b>Finalidade:</b> exclusivamente exibir, medir e melhorar a entrega de anúncios. Não usamos esses dados para nada além disso.</li>
+            <li><b>Consentimento (GDPR/UMP):</b> antes de qualquer anúncio ser solicitado, o app mostra o formulário de consentimento do Google quando exigido pela sua jurisdição (EEA/Reino Unido). Sem consentimento, nenhum request de anúncio é feito.</li>
+            <li><b>Proteção para crianças (COPPA):</b> o app está configurado como conteúdo para famílias/infantil, com anúncios classificados "G" e personalização desativada.</li>
+            <li><b>Seus controles:</b> personalizar ou desativar anúncios em <i>Configurações do Android → Google → Configurações de anúncios</i>.</li>
+        </ul>
+    </div>
+
+    <h2>4. Permissões Utilizadas</h2>
     <ul>
-        <li><b>Vibração (<code>android.permission.VIBRATE</code>):</b> Utilizada exclusivamente para fornecer feedback tátil suave ao usuário ao colocar os monstrinhos na grade ou alertar sobre repetições de regras no quebra-cabeça. Esta permissão não coleta nem transmite dados.</li>
+        <li><b>Vibração (<code>android.permission.VIBRATE</code>):</b> feedback tátil ao colocar os monstrinhos na grade — não coleta nem transmite dados.</li>
+        <li><b>Internet / Estado de rede / ID de anúncio:</b> usadas somente pelo SDK do AdMob (seção 3). Todo o tráfego é criptografado (TLS) — o app bloqueia HTTP não criptografado.</li>
     </ul>
 
-    <h2>4. Privacidade Infantil e Família (COPPA e GDPR-K)</h2>
-    <p>O Sudokumons é adequado para todas as faixas etárias, incluindo crianças pequenas. Por não coletar, transmitir ou compartilhar nenhuma informação de nenhum usuário, o aplicativo está em total conformidade com a <i>Children's Online Privacy Protection Act (COPPA)</i> e com as diretrizes do programa <i>Designed for Families</i> do Google Play.</p>
+    <h2>5. Privacidade Infantil e Família (COPPA e GDPR-K)</h2>
+    <p>O Sudokumons é adequado para todas as faixas etárias, incluindo crianças pequenas. Por não coletar dados pessoais e configurar o AdMob em modo protegido para famílias (com consentimento onde a lei exige), o aplicativo segue as diretrizes da <i>Children's Online Privacy Protection Act (COPPA)</i> e do programa <i>Designed for Families</i> do Google Play.</p>
 
-    <h2>5. Exclusão e Gerenciamento de Dados</h2>
+    <h2>6. Exclusão e Gerenciamento de Dados</h2>
     <p>O usuário possui controle total sobre suas informações salvas:</p>
     <ul>
-        <li><b>Redefinição no App:</b> Você pode apagar todos os saves, fases e estrelas a qualquer momento tocando na opção <b>"Limpar Saves / Redefinir Progresso"</b> localizada no rodapé do mapa de fases do jogo.</li>
-        <li><b>Desinstalação:</b> Ao desinstalar o Sudokumons, o sistema operacional Android apaga automaticamente e de forma definitiva todos os arquivos e registros locais do jogo.</li>
+        <li><b>Redefinição no App:</b> apague todos os saves, fases e estrelas tocando em <b>"Limpar Saves / Redefinir Progresso"</b> no rodapé do mapa de fases.</li>
+        <li><b>Desinstalação:</b> ao desinstalar o Sudokumons, o Android apaga automaticamente todos os arquivos e registros locais do jogo.</li>
     </ul>
 
-    <h2>6. Alterações desta Política</h2>
+    <h2>7. Alterações desta Política</h2>
     <p>Caso esta política sofra qualquer alteração no futuro, a versão atualizada estará sempre publicada de forma transparente e acessível nesta página web.</p>
 
     <div class="contact">
