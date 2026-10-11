@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,6 +53,12 @@
             display: flex;
             gap: 8px;
         }
+        h3 {
+            font-size: 15px;
+            color: #5D4037;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
         p { margin-bottom: 12px; font-size: 15px; color: #4E342E; }
         ul { margin-left: 22px; margin-bottom: 14px; }
         li { margin-bottom: 6px; font-size: 15px; }
@@ -72,6 +77,13 @@
             margin: 18px 0;
             border: 1.5px solid #FFE082;
         }
+        .kids-box {
+            background: #E3F2FD;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            border: 1.5px solid #90CAF9;
+        }
         .contact {
             margin-top: 36px;
             padding: 20px;
@@ -88,62 +100,106 @@
 <body>
     <div class="header">
         <div class="logo-title">🐾 Sudokumons ✨</div>
-        <p class="meta">Política de Privacidade • Atualizada em 02 de outubro de 2026</p>
+        <p class="meta">Política de Privacidade • Atualizada em 11 de outubro de 2026</p>
         <span class="badge-privacy">🛡️ Progresso 100% local • Anúncios com consentimento</span>
     </div>
 
-    <p>Esta Política de Privacidade aplica-se ao jogo para dispositivos móveis <b>Sudokumons</b> (identificador de pacote: <code>com.jobsizaiasbrasileiro.sudokumons</code>), desenvolvido com foco absoluto em privacidade, segurança infantil e entretenimento educativo.</p>
+
+    <p>Esta Política de Privacidade aplica-se ao jogo para dispositivos móveis <b>Sudokumons</b> (identificador de pacote: <code>com.jobsizaiasbrasileiro.sudokumons</code>), desenvolvido com foco absoluto em privacidade, segurança infantil e entretenimento educativo. O Sudokumons é classificado no Google Play como conteúdo <b>para todas as idades</b> e participa do programa <i>Designed for Families</i> (Projetado para Famílias).</p>
+
 
     <div class="highlight-box">
-        <b>Compromisso Fundamental:</b> O Sudokumons NÃO coleta dados pessoais, NÃO armazena nada em servidores próprios e NÃO compartilha informações de identificação pessoal (nome, e-mail, localização, contatos) com terceiros. A única coleta que existe no app é a dos anúncios, descrita na seção 3.
+        <b>Compromisso Fundamental:</b> O Sudokumons NÃO coleta dados pessoais, NÃO armazena nada em servidores próprios e NÃO compartilha informações de identificação pessoal (nome, e-mail, localização, contatos) com terceiros. A única coleta que existe no app é a dos anúncios, descrita na seção 3 — e mesmo essa é tratada em modo protegido para crianças, sem perfilamento comportamental.
     </div>
+
 
     <h2>1. Coleta de Informações</h2>
     <p>O aplicativo opera de maneira autônoma, com progresso local:</p>
     <ul>
-        <li><b>Sem Coleta de Dados Pessoais:</b> Não solicitamos nome, e-mail, telefone, lista de contatos ou contas de redes sociais.</li>
-        <li><b>Sem Acesso a Recursos Sensíveis:</b> O jogo não acessa câmera, microfone, GPS/localização nem arquivos externos do dispositivo.</li>
-        <li><b>Publicidade (Google AdMob):</b> O app exibe anúncios banner do Google AdMob — os dados tratados pela Google para isso estão detalhados na seção 3.</li>
-        <li><b>Sem Ferramentas de Analytics Próprias:</b> Não integramos Firebase Analytics, AppsFlyer ou qualquer telemetria de comportamento nossa.</li>
+        <li><b>Sem Coleta de Dados Pessoais:</b> Não solicitamos nome, e-mail, telefone, lista de contatos, data de nascimento ou contas de redes sociais. O app não possui cadastro, login ou qualquer conta de usuário.</li>
+        <li><b>Sem Acesso a Recursos Sensíveis:</b> O jogo não acessa câmera, microfone, GPS/localização, agenda, arquivos externos nem sensores do dispositivo além da vibração para feedback tátil.</li>
+        <li><b>Publicidade (Google AdMob):</b> O app exibe anúncios em formato <b>banner</b> do Google AdMob — os dados tratados pela Google para isso estão detalhados na seção 3.</li>
+        <li><b>Sem Ferramentas de Analytics Próprias:</b> Não integramos Firebase Analytics, AppsFlyer, Mixpanel, Facebook SDK ou qualquer telemetria de comportamento nossa. O único SDK de terceiros presente é o do Google AdMob (seção 3).</li>
     </ul>
 
+
     <h2>2. Armazenamento Local de Progresso</h2>
-    <p>Todo o progresso das fases, estrelas conquistadas, recordes de tempo e conquistas desbloqueadas são gravados <b>estritamente na memória interna e privada do seu próprio aparelho</b>, utilizando banco de dados SQLite local protegido pela sandbox do Android. Esses dados nunca são transmitidos.</p>
+    <p>Todo o progresso das fases, estrelas conquistadas, recordes de tempo, conquistas desbloqueadas e preferências (som, música, vibração) são gravados <b>estritamente na memória interna e privada do seu próprio aparelho</b>, utilizando banco de dados SQLite local protegido pela sandbox do Android. Esses dados nunca são transmitidos a nós nem a terceiros, e são apagados automaticamente na desinstalação do app.</p>
+
 
     <div class="ads-box">
         <h2>3. Publicidade (Google AdMob)</h2>
-        <p>Para manter o jogo gratuito, o Sudokumons exibe <b>anúncios em formato banner</b> operados pelo <b>Google AdMob</b>:</p>
+        <p>Para manter o jogo gratuito, o Sudokumons exibe <b>anúncios em formato banner</b> operados pelo <b>Google AdMob</b>, que é o único parceiro de publicidade integrado ao app.</p>
+
+        <h3>3.1 Dados tratados pela Google</h3>
         <ul>
-            <li><b>Dados tratados pela Google:</b> Google Advertising ID (quando disponível e consentido), endereço IP e eventos de exibição/clique do anúncio — conforme a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
-            <li><b>Finalidade:</b> exclusivamente exibir, medir e melhorar a entrega de anúncios. Não usamos esses dados para nada além disso.</li>
-            <li><b>Consentimento (GDPR/UMP):</b> antes de qualquer anúncio ser solicitado, o app mostra o formulário de consentimento do Google quando exigido pela sua jurisdição (EEA/Reino Unido). Sem consentimento, nenhum request de anúncio é feito.</li>
-            <li><b>Proteção para crianças (COPPA):</b> o app está configurado como conteúdo para famílias/infantil, com anúncios classificados "G" e personalização desativada.</li>
-            <li><b>Seus controles:</b> personalizar ou desativar anúncios em <i>Configurações do Android → Google → Configurações de anúncios</i>.</li>
+            <li>Google Advertising ID (quando disponível e consentido) ou identificador de dispositivo alternativo;</li>
+            <li>Endereço IP (usado para fins de segurança, prevenção à fraude e delimitação geográfica de anúncios);</li>
+            <li>Eventos de exibição e clique do anúncio (impressões, cliques, taxa de preenchimento).</li>
         </ul>
+        <p>Esses dados são tratados pela Google LLC conforme a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e a <a href="https://policies.google.com/technologies/ads">Como as tecnologias de anúncio da Google são usadas</a>.</p>
+
+        <h3>3.2 Finalidade</h3>
+        <p>A finalidade é <b>exclusivamente</b> exibir, medir e melhorar a entrega de anúncios. Esses dados NÃO são usados para criar perfis comportamentais, segmentação por interesses, remarketing ou qualquer forma de personalização de anúncios.</p>
+
+        <h3>3.3 Consentimento (GDPR / ePrivacy)</h3>
+        <p>Antes de qualquer anúncio ser solicitado, o app aciona o fluxo de consentimento do Google (User Messaging Platform — UMP) quando exigido pela sua jurisdição (EEA, Reino Unido e demais regiões que exijam consentimento). O app marca <code>setTagForUnderAgeOfConsent(true)</code>, sinalizando à Google que todos os usuários devem ser tratados como abaixo da idade de consentimento — sem consentimento válido, nenhum request de anúncio é feito.</p>
+
+        <h3>3.4 Proteção para crianças (COPPA / GDPR-K)</h3>
+        <p>O Sudokumons aplica as proteções infantis para <b>todos</b> os usuários, independentemente de idade, por ser classificado como conteúdo para famílias (abordagem <i>mixed audience</i>):</p>
+        <ul>
+            <li><code>TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</code>: o AdMob opera em modo direcionado a crianças — anúncios são <b>não personalizados</b> e não há vinculação do GAID a perfis de interesses;</li>
+            <li><code>MAX_AD_CONTENT_RATING_G</code>: apenas anúncios classificados "G" (para todas as idades) são servidos;</li>
+            <li><code>setTagForUnderAgeOfConsent(true)</code>: todos os usuários são tratados como menores de consentimento pelo Google, reforçando a proteção GDPR-K;</li>
+            <li>Nenhum perfilamento comportamental é ativado, mesmo com consentimento.</li>
+        </ul>
+
+        <h3>3.5 Seus controles</h3>
+        <p>Você pode personalizar ou desativar anúncios em <i>Configurações do Android → Google → Configurações de anúncios</i> ou nas <a href="https://adssettings.google.com">Configurações de Anúncios do Google</a>. Mesmo com personalização desativada, anúncios continuam sendo exibidos — porém em modo não direcionado.</p>
     </div>
+
 
     <h2>4. Permissões Utilizadas</h2>
     <ul>
         <li><b>Vibração (<code>android.permission.VIBRATE</code>):</b> feedback tátil ao colocar os monstrinhos na grade — não coleta nem transmite dados.</li>
-        <li><b>Internet / Estado de rede / ID de anúncio:</b> usadas somente pelo SDK do AdMob (seção 3). Todo o tráfego é criptografado (TLS) — o app bloqueia HTTP não criptografado.</li>
+        <li><b>Internet (<code>android.permission.INTERNET</code>):</b> usada exclusivamente pelo SDK do AdMob para carregar anúncios (seção 3). Todo o tráfego é criptografado (TLS) — o app bloqueia HTTP não criptografado via <code>usesCleartextTraffic=false</code>.</li>
+        <li><b>Estado de rede (<code>android.permission.ACCESS_NETWORK_STATE</code>):</b> verificação de conectividade antes de carregar anúncios — não coleta nem transmite dados.</li>
+        <li><b>ID de anúncio:</b> acessado somente pelo SDK do Google AdMob, sujeito às regras da seção 3.</li>
     </ul>
 
-    <h2>5. Privacidade Infantil e Família (COPPA e GDPR-K)</h2>
-    <p>O Sudokumons é adequado para todas as faixas etárias, incluindo crianças pequenas. Por não coletar dados pessoais e configurar o AdMob em modo protegido para famílias (com consentimento onde a lei exige), o aplicativo segue as diretrizes da <i>Children's Online Privacy Protection Act (COPPA)</i> e do programa <i>Designed for Families</i> do Google Play.</p>
+
+    <div class="kids-box">
+        <h2>5. Privacidade Infantil e Família (COPPA, GDPR-K e Designed for Families)</h2>
+        <p>O Sudokumons é adequado para todas as faixas etárias, incluindo crianças pequenas, e adota a seguinte postura:</p>
+        <ul>
+            <li><b>Sem coleta de dados pessoais de crianças:</b> por não solicitar nem tratar dados pessoais, o app atende à exigência central da <i>Children's Online Privacy Protection Act (COPPA)</i> e do artigo 8 do GDPR (GDPR-K).</li>
+            <li><b>Anúncios protegidos:</b> o AdMob opera em modo child-directed com anúncios não personalizados e classificação "G" para todos os usuários (detalhes na seção 3.4).</li>
+            <li><b>Sem compartilhamento com terceiros para fins de perfilamento:</b> nenhum dado é compartilhado com redes sociais, brokers de dados ou plataformas de analytics.</li>
+            <li><b>Programa Designed for Families:</b> o app segue as diretrizes do programa do Google Play, incluindo a classificação de conteúdo adequada e esta política de privacidade acessível.</li>
+        </ul>
+        <p><b>Direitos dos pais (COPPA §312.6):</b> pais ou responsáveis legais podem solicitar a revisão das informações tratadas pelo app, a correção ou a exclusão de quaisquer dados — como o app não coleta dados pessoais, a única informação tratada é a dos anúncios Google (seção 3), gerenciada pelas próprias configurações do Google descritas na seção 3.5. Para exercer qualquer direito, entre em contato pelo e-mail na seção 8.</p>
+    </div>
+
 
     <h2>6. Exclusão e Gerenciamento de Dados</h2>
     <p>O usuário possui controle total sobre suas informações salvas:</p>
     <ul>
         <li><b>Redefinição no App:</b> apague todos os saves, fases e estrelas tocando em <b>"Limpar Saves / Redefinir Progresso"</b> no rodapé do mapa de fases.</li>
         <li><b>Desinstalação:</b> ao desinstalar o Sudokumons, o Android apaga automaticamente todos os arquivos e registros locais do jogo.</li>
+        <li><b>Anúncios:</b> os dados tratados pelo Google Ads podem ser gerenciados ou apagados nas <a href="https://adssettings.google.com">Configurações de Anúncios do Google</a> e na <a href="https://myaccount.google.com/data-and-privacy">Conta do Google</a>.</li>
     </ul>
 
-    <h2>7. Alterações desta Política</h2>
-    <p>Caso esta política sofra qualquer alteração no futuro, a versão atualizada estará sempre publicada de forma transparente e acessível nesta página web.</p>
+
+    <h2>7. Segurança e Transferências Internacionais</h2>
+    <p>O app não possui backend próprio — não há servidores nossos envolvidos. O único tráfego de rede é o do Google AdMob, que pode processar dados em servidores localizados fora do seu país (incluindo os Estados Unidos), conforme as salvaguardas descritas na <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. Todo o tráfego do app é criptografado com TLS.</p>
+
+
+    <h2>8. Alterações desta Política e Contato</h2>
+    <p>Caso esta política sofra qualquer alteração no futuro, a versão atualizada estará sempre publicada de forma transparente e acessível nesta página web. A data da última atualização aparece no topo desta página.</p>
 
     <div class="contact">
         <h2>Contato com o Desenvolvedor</h2>
-        <p>Se você tiver quaisquer dúvidas, sugestões ou solicitações relacionadas a esta Política de Privacidade ou ao jogo Sudokumons, entre em contato através do e-mail oficial:</p>
+        <p>Se você tiver quaisquer dúvidas, sugestões ou solicitações relacionadas a esta Política de Privacidade, direitos de pais ou responsáveis (COPPA) ou ao jogo Sudokumons, entre em contato através do e-mail oficial:</p>
         <p>📧 <a href="mailto:jobs.izaiasbrasileiro@gmail.com">jobs.izaiasbrasileiro@gmail.com</a></p>
         <p style="margin-top: 8px; font-size: 13px; color: #8D6E63;">Responsável: Izaias Brasileiro • Desenvolvedor Independente</p>
     </div>
